@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="main" template="/WEB-INF/views/pages/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/include/header.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/include/footer.jsp"/>
+	</definition>
+	<definition name="index" extends="main">
+		<put-attribute name="title" value="Home Page"/>
+		<put-attribute name="body" value="/WEB-INF/views/pages/index.jsp"/>
+	</definition>
+	<definition name="addProductForm" extends="main">
+		<put-attribute name="title" value="Add Products"/>
+		<put-attribute name="body" value="/WEB-INF/views/pages/addProductForm.jsp"/>
+	</definition>
+	<definition name="login" extends="main">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body" value="/WEB-INF/views/pages/login.jsp"/>
+	</definition>
+	<definition name="403" extends="main">
+		<put-attribute name="title" value="Access Denied"/>
+		<put-attribute name="body" value="/WEB-INF/views/pages/403.jsp"/>
+	</definition>
+</tiles-definitions>
